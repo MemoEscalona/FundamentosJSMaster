@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Listas con Ciclos</title>
+    <link rel="stylesheet" href="/lista_numeros/resources/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="form-container">
+            <header>
+                <h2>Formulario de Números</h2>
+            </header>
+            <form id="numberForm">
+                <label for="number1">Número 1:</label>
+                <input type="number" id="number1" name="number1" min="0" required>
+
+                <label for="number2">Número 2:</label>
+                <input type="number" id="number2" name="number2" min="0" required>
+
+                <button type="button" onclick="calculateNumberList()">Generar Listas</button>
+            </form>
+        </section>
+
+        <section class="card-container">
+            <header>
+                <h2>Resultado - Solo un ciclo for</h2>
+            </header>
+            <article id="card" class="info-card">
+                <p><strong>Lista de Enteros:</strong></p>
+                <ul id="integerListOneFor"></ul>
+                <p><strong>Lista de Números Pares (Descendente):</strong></p>
+                <ul id="evenNumbersListOneFor"></ul>
+                <p><strong>Lista de Números Impares (Descendente):</strong></p>
+                <ul id="oddNumberListOneFor"></ul>
+            </article>
+        </section>
+
+        <section class="card-container">
+            <header>
+                <h2>Resultado - Dos ciclos for</h2>
+            </header>
+            <article id="card" class="info-card">
+                <p><strong>Lista de Enteros (Ascendente):</strong></p>
+                <ul id="integerListTwoFors"></ul>
+                <p><strong>Lista de Números Pares (Descendente):</strong></p>
+                <ul id="evenNumbersListTwoFors"></ul>
+                <p><strong>Lista de Números Impares (Descendente):</strong></p>
+                <ul id="oddNumberListTwoFors"></ul>
+            </article>
+        </section>
+    </main>
+    <script src="/lista_numeros/resources/js/index.js"></script>
+    </script>
+</body>
+</html>
