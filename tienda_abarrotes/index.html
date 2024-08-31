@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escenario 1 - Tienda Abarrotes</title>
+    <link rel="stylesheet" href="/tienda_abarrotes/resources/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="form-container">
+            <header>
+                <h2>Formulario de Compra</h2>
+            </header>
+            <form id="paymentForm">
+                <!-- se define como numero y se ponen las propiedades minimas y requeridas-->
+                <label for="units">Unidades del Producto:</label>
+                <input type="number" id="units" name="units" min="1" required>
+                <!-- se define como numero y se ponen las propiedades minimas y requeridas-->
+                <label for="unitPrice">Precio Unitario:</label>
+                <input type="number" id="unitPrice" name="unitPrice" min="1" required>
+                <!-- Se agrega un botón, para accionar cuando se debe calcular, este al hacer clic sobre el ejecutara el metodo calcular-->
+                <button type="button" onclick="calcular()">Calcular</button>
+            </form>
+        </section>
+
+        <section class="ticket-container">
+            <header>
+                <h2>Desglose de Ticket de Compra</h2>
+            </header>
+            <article id="ticket">
+                <p>Sub-Total: $<span id="subtotal">0.00</span></p>
+                <p>Descuento: $<span id="discount">0.00</span> (<span id="discountPercentage">0</span>%)</p>
+                <p>Total a Pagar: $<span id="total">0.00</span></p>
+            </article>
+        </section>
+    </main>
+    <script src="/tienda_abarrotes/resources/js/index.js"></script>
+</body>
+</html>
