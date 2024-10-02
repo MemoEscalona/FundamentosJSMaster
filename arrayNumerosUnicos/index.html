@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array Numeros</title>
-    <link rel="stylesheet" href="/arrayNumeros/resources/css/style.css">
+    <link rel="stylesheet" href="/arrayNumerosUnicos/resources/css/style.css">
 </head>
 <body>
     <main class="container">
@@ -14,8 +14,12 @@
                 <p>Ingresa el número de numeros aleatorios a identificar</p>
             </header>
             <form id="arrayNumerosForm">
-                <label for="numero">Número:</label>
+                <label for="numero">Tamaño del arreglo:</label>
                 <input type="number" id="numero" name="numero" min="1" required>
+                <label for="numeroRepetibles">Indica los numeros que deseas que se repitan, separalos por ",":</label>
+                <input type="text" id="numeroRepetibles" name="numeroRepetibles" placeholder="2,3,5" required>
+                <label for="veces">Indica cuantas veces quieres que se repitan los numeros:</label>
+                <input type="number" id="veces" name="veces" min="1" required>
                 <button type="button" onclick="calculate()">Generar numeros y procesar</button>
             </form>
         </section>
@@ -26,12 +30,10 @@
             </header>
             <article id="card" class="info-card">
                 <p id="listaNumeros"></p>
-                <p id="numeroMayor"></p>
-                <p id="numeroMenor"></p>
-                <p id="media"></p>
+                <p id="listaNumerosUnicos"></p>
             </article>
         </section>
     </main>
-    <script src="/arrayNumeros/resources/js/index.js"></script>
+    <script src="/arrayNumerosUnicos/resources/js/index.js"></script>
 </body>
 </html>
