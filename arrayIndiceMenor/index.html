@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Indice Menor</title>
+    <link rel="stylesheet" href="/arrayIndiceMenor/resources/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="form-container">
+            <header>
+                <h2>Array indice menor</h2>
+                <p>Ingresa el número de numeros aleatorios a identificar</p>
+            </header>
+            <form id="arrayNumerosForm">
+                <label for="numero">Tamaño de los arreglos:</label>
+                <input type="number" id="numero" name="numero" min="1" required>
+                <button type="button" onclick="calculate()">Generar numeros y procesar</button>
+            </form>
+        </section>
+
+        <section class="card-container">
+            <header>
+                <h2>Resultado</h2>
+            </header>
+            <article id="card" class="info-card">
+                <p id="listaArregloUno"></p>
+                <p id="listaArregloDos"></p>
+                <p id="listaArregloResultante"></p>
+            </article>
+        </section>
+    </main>
+    <script src="/arrayIndiceMenor/resources/js/index.js"></script>
+</body>
+</html>
