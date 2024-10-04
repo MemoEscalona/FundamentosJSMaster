@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <link rel="stylesheet" href="/fetchPromesas/resources/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="form-container">
+            <header>
+                <h2>Fetch</h2>
+                <p>Ingresa el API en metodo get (sin autenticacion a consumir)</p>
+            </header>
+            <form id="requestForm">
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" value="https://api.github.com/users/1"  required>
+                <button type="button" id="button" onclick="triggerRequest()">Realizar petición y pintar</button>
+            </form>
+        </section>
+
+        <section class="card-container">
+            <header>
+                <h2>Resultado</h2>
+            </header>
+            <article id="card" class="info-card">
+                <div id="resultado"></div>
+            </article>
+        </section>
+    </main>
+    <script src="/fetchPromesas/resources/js/index.js"></script>
+</body>
+</html>
